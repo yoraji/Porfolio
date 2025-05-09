@@ -1,11 +1,11 @@
 /* Theme Variables */
 :root {
   --background-color: #000000;
-  --text-color: #ffffff;
+  /* --text-color: #e70000; */
   --link-color: #2a70b6;
   --primary-color: #0073e5;
-  --secondary-color: #ffffff;
-  --footer-bg-color: #1a1a1a;
+  /* --secondary-color: #f40c0c; */
+  /* --footer-bg-color: #b60000; */
   --header-gradient: linear-gradient(90deg, #020202, #020202);
 }
 
@@ -44,7 +44,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background: var(--header-gradient);
-  color: white;
+  /* color: rgb(233, 23, 23); */
   padding: 1rem 2rem;
   font-size: 1.5rem;
   font-weight: bold;
@@ -57,12 +57,12 @@ header nav {
   justify-content: center;
   align-items: center;
 }
-
+/* !!! */
 header nav a,
 header nav button {
   background-color: transparent;
-  color: white;
-  border: 2px solid white;
+  /* color: rgb(221, 219, 219); */
+  border: 2px solid #2c4e6f ;
   padding: 0.5rem 1rem;
   border-radius: 5px;
   cursor: pointer;
@@ -72,13 +72,13 @@ header nav button {
 
 header nav a:hover,
 header nav button:hover {
-  background-color: white;
+  background-color: rgb(55, 112, 199);
   color: var(--primary-color);
   transform: scale(1.05);
 }
 
 .white-button {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   color: black;
   border: none;
   padding: 0.5rem 1rem;
@@ -90,14 +90,14 @@ header nav button:hover {
 }
 
 .white-button:hover {
-  background-color: #f0f0f0;
+  background-color: #fafafa;
   transform: scale(1.05);
 }
 
 /* Footer */
 footer {
   background-color: var(--footer-bg-color);
-  color: white;
+  color: rgb(223, 0, 0);
   text-align: center;
   padding: 1rem 0;
   margin-top: 2rem;
@@ -156,5 +156,5 @@ footer {
 }
 
 .nav-links a:hover {
-  color: #ffcc00; /* Optional: Change hover color to yellow or another color */
+  color: #c2a639; /* Optional: Change hover color to yellow or another color */
 }

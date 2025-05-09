@@ -34,7 +34,7 @@
 .hero-btn {
     display: inline-block;
     padding: 0.8rem 1.5rem;
-    background-color: #2a5580;
+    background-color: #0f4983;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -43,7 +43,7 @@
 }
 
 .hero-btn:hover {
-    background-color: #0a3e71;
+    background-color: #1660aa;
     transform: scale(1.05);
 }
 .hero-image {
