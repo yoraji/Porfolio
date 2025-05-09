@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.yo-raji {
+  color: white; /* Ensure the text is white */
+  font-size: 2rem; /* Adjust the size as needed */
+  font-weight: bold; /* Make it bold */
+  background-color: black; /* Add a black background */
+  padding: 0.5rem 1rem; /* Add some padding */
+  border-radius: 5px; /* Optional: Add rounded corners */
+}

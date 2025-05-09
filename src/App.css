@@ -1,45 +1,24 @@
 /* Theme Variables */
 :root {
-  --background-color: #f4f4f9;
-  --text-color: #333333;
-  --link-color: #007acc;
-  --primary-color: #4caf50;
-  --secondary-color: #ff5722;
+  --background-color: #000000;
+  --text-color: #ffffff;
+  --link-color: #2a70b6;
+  --primary-color: #0073e5;
+  --secondary-color: #ffffff;
+  --footer-bg-color: #1a1a1a;
+  --header-gradient: linear-gradient(90deg, #020202, #020202);
 }
 
+/* Base Styles */
 body {
   margin: 0;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: var(--background-color);
   color: var(--text-color);
   line-height: 1.6;
 }
 
-header {
-  background-color: var(--primary-color);
-  color: white;
-  padding: 1rem 0;
-  text-align: center;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.navbar {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  padding: 1rem;
-  background-color: var(--secondary-color);
-}
-
-.navbar a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-.navbar a:hover {
+h1, h2, h3 {
   color: var(--primary-color);
 }
 
@@ -54,39 +33,128 @@ section {
   margin-bottom: 2rem;
 }
 
-h1, h2, h3 {
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--header-gradient);
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header nav {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav a,
+header nav button {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
+  font-weight: bold;
+}
+
+header nav a:hover,
+header nav button:hover {
+  background-color: white;
   color: var(--primary-color);
+  transform: scale(1.05);
 }
 
-footer {
-  background-color: var(--secondary-color);
-  color: white;
-  text-align: center;
-  padding: 1rem 0;
-  margin-top: 2rem;
-}
-
-button {
-  background-color: var(--primary-color);
-  color: white;
+.white-button {
+  background-color: white;
+  color: black;
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-button:hover {
-  background-color: var(--secondary-color);
+.white-button:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
 }
 
+/* Footer */
+footer {
+  background-color: var(--footer-bg-color);
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
-  .navbar {
+  header nav {
     flex-direction: column;
-    gap: 1rem;
   }
 
   main {
     padding: 1rem;
   }
+}
+
+.white-text {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 8%;
+  background-color: black; /* Ensure the entire navbar is black */
+  color: white;
+  position: fixed;
+  width: 100%;
+  height: 50px; /* Adjust the height as needed */
+  top: 0;
+  z-index: 999;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white; /* Ensure the logo text is white */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: white; /* Ensure the links are white */
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffcc00; /* Optional: Change hover color to yellow or another color */
 }

@@ -1,0 +1,54 @@
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 8%;
+    background: url('./image1.jpg') no-repeat center center/cover; /* Set the background to image1 */
+    color: white;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 50%;
+    z-index: 2; /* Ensure content is above the background */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #bba33f; /* Optional: Highlight the name with a different color */
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero-btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #2a5580;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.hero-btn:hover {
+    background-color: #0a3e71;
+    transform: scale(1.05);
+}
+.hero-image {
+    width: 40%;
+    height: auto;
+    z-index: 2; /* Ensure the image is above the background */
+    background: url('./image1.jpg') no-repeat center center/cover; /* Add the image */
+}

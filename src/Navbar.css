@@ -1,0 +1,37 @@
+/* filepath: /home/youssef/Documents/Porfolio/src/Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 8%;
+    background-color: #000000;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white; /* Ensure the text is white */
+    text-transform: uppercase; /* Optional: Make it uppercase for emphasis */
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #070707;
+  }
